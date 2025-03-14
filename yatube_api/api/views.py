@@ -22,7 +22,7 @@ class PostViewSet(viewsets.ModelViewSet):
         if instance.author != self.request.user:
             raise PermissionDenied('Удаление чужого контента запрещено!')
         super().perform_destroy(instance)
-     
+
 
 class CommentViewSet(viewsets.ModelViewSet):
     serializer_class = CommentSerializer
