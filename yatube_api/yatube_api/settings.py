@@ -24,7 +24,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'posts.apps.PostsConfig',
-    'rest_framework.authtoken'
+    'rest_framework',
+    'rest_framework.authtoken',
+    'api.apps.ApiConfig',
 ]
 
 REST_FRAMEWORK = {
