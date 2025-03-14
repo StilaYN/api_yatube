@@ -1,7 +1,12 @@
 from rest_framework import viewsets
 from rest_framework.exceptions import PermissionDenied
-from posts.models import Post
-from .serializers import PostSerializer
+from posts.models import Group, Post
+from .serializers import GroupSerializer, PostSerializer
+
+
+class GroupViewSet(viewsets.ModelViewSet):
+    queryset = Group.objects.all()
+    serializer_class = GroupSerializer
 
 
 class PostViewSet(viewsets.ModelViewSet):
