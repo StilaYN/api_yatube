@@ -23,9 +23,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'posts.apps.PostsConfig',
     'rest_framework',
     'rest_framework.authtoken',
+    'posts.apps.PostsConfig',
     'api.apps.ApiConfig',
 ]
 
@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'yatube_api.urls'
+ROOT_URLCONF = 'urls'
 TEMPLATES_DIR = BASE_DIR / 'templates'
 TEMPLATES = [
     {
